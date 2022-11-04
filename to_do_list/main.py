@@ -58,6 +58,8 @@ while tmp_str != 'exit':
     elif tmp_str == 'download data':
         create.read_data()
         create.screen_clear()
-
+    else:
+        create.write_data()
+        break
 
 
