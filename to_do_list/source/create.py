@@ -122,7 +122,8 @@ def statistic():
 def save_csv():
    '''Saving input data in particular file'''
     with open('test_data.csv', 'w', newline='') as csvfile:
-        csvlist = csv.writer(csvfile, list_of_task)
+        csvlist = csv.writer(csvfile)
+        csvlist.writerow(list_of_task)
 
 def read_data():
     '''json read'''
